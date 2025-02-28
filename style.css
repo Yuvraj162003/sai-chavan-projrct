@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar Styling */
+.navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+   height: 90px;
+  margin-left: 40px;
+  text-align: center;
+  justify-content: center;
+margin-top: 4px;
+}
+
+.menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+    margin-right:40px;
+}
+
+/* Navbar Links */
+.nav-links {
+    margin-right: 100px;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: aqua;
+}
+
+/* Responsive Menu (Mobile) */
+@media (max-width: 480px) {
+    .navbar {
+        height: 35px;
+       width: 100%;
+       background-color:;
+    }
+    .menu-btn {
+        display: block;
+        font-size: 24px;
+    }
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top:48px;
+        left: 0;
+        width: 100vw;
+        background-color: #333;
+        padding: 10px 0;
+        transform: translateX(-100%);
+        opacity: 1;
+        pointer-events: none;
+        border-radius: 0px 0px 200px;
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .logo img{
+        height: 70px;
+       margin-left: 8px;
+       
+     }
+     .section{
+        height: 100%;
+        width:100%;  
+        overflow: hidden;
+    }
+}
+
+/* Section Styling */
+.section {
+    height: 100vh;
+    width:100vw;  
+    font-size: 32px;
+    color: white;
+    overflow: hidden;
+}
+
+#home { background: black; }
+#about { background: black; }
+#services { background: BLACK;
+position: relative; 
+height: 180vh;}
+#contact {
+    font-family: 'Outfit';
+    background: linear-gradient(#ffdad5,#fff7f9);
+}

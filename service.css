@@ -1,0 +1,158 @@
+
+.service-text{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.service-text h3{
+  text-align: center;
+  margin-top: 75px;
+  font-size: 35px;
+  color: aqua;
+}
+.service-text h2{
+  text-align: center;
+  margin-top: -30px;
+  font-size: 40px;
+}
+.service-text h2 span{
+color: aqua;
+font-size: 50px;
+}
+.service-text h6{
+  text-align: center;
+  font-size: px;
+  margin-top: -30px;
+  padding: 10px;
+}
+.service{
+  margin-top: -0px;
+  overflow: hidden;
+ align-items:center;
+ justify-content: center;
+ display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+.our h5{
+  text-align: center;
+  margin-top: -62px;
+  font-size: 24px;
+}
+.service .our{
+  border: 1px solid;
+  height: 42vh;
+  width: 44vh;
+  margin-top: 5vh;
+  transition: 0.50s;
+  border-radius: 10px;
+  margin-left: 30px;
+  
+}
+.service .our:hover{
+background-color: aqua;
+color: #11141a;
+border: none;
+}
+.service .our:hover .font i{ 
+  color: black;
+ }
+
+.our h1{
+  text-align: center;
+  padding: 5px;
+  font-size: 21px;
+  margin-top: 10px;
+  color: aqua;
+}
+.service .our:hover h1{
+  color: black;
+  
+}
+.our p{
+  font-size: 15px;
+ text-align: center;
+ padding: 3px;
+ margin-top: 85px;
+ margin-left: px; 
+
+}
+.font{
+  height: 50px;
+  border: 2px solid;
+  width: 50px;
+  border-radius: 50%;
+ margin-left: 18vh;
+  position: absolute;
+  margin-top: -15px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .our i{
+font-size: 25px;
+color: aqua;
+}
+
+@media (max-width: 480px){
+  #services{
+    height: 330vh;
+  }
+ 
+  .service-text{
+align-items: center;
+justify-content: center;
+
+  }
+  .service-text h3{
+    font-size: 20px;
+  }
+  .service-text h2{
+    font-size: 23px;
+  }
+  .service-text h2 span{
+    font-size: 30px;
+    line-height: 70px;
+    }
+    .service-text h3{
+      font-size: 29px;
+    }
+      .service-text h2{
+          font-size: 20px;
+         
+        }
+        .service-text span{
+          font-size: 45px;
+        }
+        .service-text h6{
+          font-size: 14px;
+          padding: 1px;
+          margin-right: 0px;
+        }
+        .service{  
+          margin-top: -50px;
+           display: grid;
+            grid-template-columns: repeat(1, 1fr);
+         }
+         .service .our{
+            height: 29vh;
+            width: 42vh;
+           text-align: center;
+           overflow: auto;
+            
+         }
+         .our h1{
+            font-size: 14px;
+         }
+         .our p{
+            font-size: 13px;
+            margin-top: 50px;
+         }
+         .font{
+            height: 40px;
+            width: 40px;  
+         }
+         .service .our i{
+            font-size: 20px;
+             }
+
+}

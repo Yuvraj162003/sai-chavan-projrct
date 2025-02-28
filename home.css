@@ -1,0 +1,211 @@
+#home{
+    height: 100vh;
+    width: 100vw;
+}
+.home-main{
+    display: flex; 
+}
+.home-text{
+position: absolute;
+margin-top: 190px;
+margin-left: 150px;
+}
+.home-text h1{
+font-size: 30px;
+font-weight: 700;
+color: #0ef;
+margin-bottom: -70px;
+position: relative;
+}
+.home-text p{
+    font-size: 22px;
+    margin-top: 35px;
+    position: absolute;
+    font-weight:lighter;
+}
+.home-text .fonte{
+    color: white;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home-img{
+   margin-top: 100px;
+    height: 480px;
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    margin-left: 125vh;
+    overflow: hidden;
+    box-shadow:0 0 2rem #0ef;
+    animation: floatimage2 3s ease-in-out infinite;  
+}
+@keyframes  floatimage2{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(0.50rem);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.home-img img{
+    height: 95vh;
+    margin-top: 20vh;
+   
+}
+/*typewirter*/
+.conainer.text{
+position: relative;
+color: #0ef;
+font-size: 33px;
+font-weight: 600;
+}
+.text.sec-text:before{
+    content: '';
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    animation: animate 3s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.typewriter {
+    margin-left: 20px;
+    font-size: 29px;
+    font-weight: bold;
+    height: 30px;
+    color: #0ef;
+    font-weight: 700;
+}
+.type{
+margin-top: -50px;
+display: flex;
+align-items: center;  
+}
+.typewriter{
+font-size: 27px;
+}
+.type h2{
+color: white;
+font-size: 40px;
+}
+
+
+.social-media{
+   
+    margin-left: 150px;
+    margin-top: -190px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.social-media h4{
+   font-size: 22px;
+    margin-top: 10px;
+}
+.social-media h4 span{
+margin-left: 10px;
+}
+.social-media i{
+font-size: 27px;
+align-items: center;
+padding: 10px;
+border: 2px solid #0ef;
+border-radius: 50%;
+color: #0ef;
+margin-left: 2px;
+background-color:#1f242d;
+transition: 0.3s ease;
+border: 2px solid #0ef;
+background: transparent;
+cursor: pointer;
+}
+.social-media i:hover{
+background-color:#0ef;
+box-shadow:  0 0 3rem #0ef;
+color: #1f242d;
+font-size: 30px;
+font-weight: 700;
+}
+@media (max-width: 480px) {
+    #home{
+     width: 100%;
+    }
+    .home-text{
+   margin-top: 60px;
+   align-items: center;
+        }
+    .home-text h1{
+        font-size: 18px;
+       
+        margin-left: -130px;
+        line-height: 80px;
+        }
+        .home-text .fonte{ 
+           font-size: 42px; 
+           text-align: center;
+           margin-left: -100px;
+        }
+        .type h2{
+           position: absolute;
+            font-size: 23px;
+            margin-left: -100px;
+            }
+  .typewriter {
+ margin-left: -34px;
+     font-size: 21px;
+      }
+            .type{
+                margin-top: -112px;
+                margin-left:-30px;
+                }
+                .home-text p{
+                    padding: 9px;
+                    font-size: 14px;
+                    font-weight: 900;
+                    position: sticky;
+                    margin-left: -136px;
+                    margin-top: 56px;
+                }
+        .home-img{  
+           text-align: center;
+       margin-left: 80px;
+       height: 200px;
+       width: 200px;
+       margin-top: 295px;
+       }
+       .home-img img{ 
+        height: 300px;
+        margin-bottom: 40px;
+}
+.social-media{
+   margin: 20px;
+   margin-left:60px;
+   align-items: center;
+    
+}
+.social-media i{
+font-size: 20px;
+padding: 8px;
+text-align: center;
+}
+.social-media h4{
+    font-size: 17px;
+   margin-left: px;
+}
+
+}
